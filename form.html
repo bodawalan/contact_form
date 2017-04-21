@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body>
+{% block content %}
+<form role="form" action="" method="POST">{% csrf_token %}
+    <!--<div class="form-group">
+          <input type="text" class="form-control" name="first_name" placeholder="first_name">
+          <input type="text" class="form-control" name="last_name" placeholder="last_name">
+          <input type="text" class="form-control" name="address" placeholder="address">
+    </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>-->
+    <!--Naked rm-->
+<!--<div class="card-block">
+
+    <!--Header-->
+    <div class="text-center">
+        <h3><i class="fa fa-envelope"></i> Registrations Form:</h3>
+        <hr class="mt-2 mb-2">
+    </div>
+
+    <!--Body-->
+
+    <br>
+
+    <!--Body-->
+    <div class="form-group">
+        <i class="fa fa-user prefix"></i>
+        <input type="text" id="form3" class="form-control" name="first_name" >
+        <label for="form3">first name</label>
+    </div>
+    <div class="md-form">
+        <i class="fa fa-user prefix"></i>
+        <input type="text" id="form3" class="form-control" name="last_name" >
+        <label for="form3">last name</label>
+    </div>
+    <div class="md-form">
+        <i class="fa fa-user prefix"></i>
+        <input type="text" id="form3" class="form-control" name="address" >
+        <label for="form3">Address</label>
+    </div>
+
+
+
+
+    <div class="md-form">
+        <i class="fa fa-user prefix"></i>
+        <input type="text" id="form3" class="form-control" name="city" >
+        <label for="form3">city</label>
+    </div>
+    <div class="md-form">
+        <i class="fa fa-user prefix"></i>
+        <input type="text" id="form3" class="form-control" name="state" >
+        <label for="form3">state</label>
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-user prefix"></i>
+        <input type="text" id="form3" class="form-control" name="zipcode" >
+        <label for="form3">Zip code</label>
+    </div>
+    <div class="md-form">
+        <i class="fa fa-envelope prefix"></i>
+        <input type="text" id="form2" class="form-control">
+        <label for="form2">Your email</label>
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-phone"></i>
+        <input type="text" id="form8" class="form-control" name="phone_number">
+        <label for="form8"> Number</label>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-default">Submit</button>
+
+
+    </div>
+
+
+<!--Naked Form-->
+
+</form>
+ {% endblock %}
+
+</body>
+</html>
